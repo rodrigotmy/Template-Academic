@@ -1,0 +1,7 @@
+.form-register__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3;
+  grid-template-columns: 3;
+  -ms-grid-rows: 7;
+  grid-template-rows: 7; }

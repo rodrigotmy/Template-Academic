@@ -1,0 +1,54 @@
+.services {
+  @include max-width-page;
+  background-color: #FFF;
+  height: 250px;
+
+  &__contnr-into {
+    @include max-width-contnr;
+    @include contnr-center;
+    @include content-center-fb;
+    justify-content: space-between;
+    height: inherit;
+    background-color: #FFF;
+  }
+
+  &__item {
+    // border: 1px solid grey;
+    width: 300px;
+    height: 100px;
+  }
+
+  &__item-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $color-aux;
+    float: left;
+  }
+
+  &__item-detail {
+    float: right;
+    width: 60%;
+    height: auto;
+    font-family: $Font1;
+    margin-top: 16px;
+    
+    // border: 1px solid green;
+  }
+
+  &__item-title {
+    font-size: 1.1rem;
+    color: $color-second;
+    margin-bottom: 10px;
+    
+  }
+
+  &__item-descrp {
+    font-size: .9rem;
+    color: $color-txt;
+    float: right;
+  }
+
+  
+
+}

@@ -1,0 +1,12 @@
+.form-register {
+  @include max-width-page;
+  height: 400px;
+  background-color: grey;
+
+  &__contnr-into {
+    @include max-width-contnr;
+    @include contnr-center;
+    height: inherit;
+    background-color: green;
+  }
+}

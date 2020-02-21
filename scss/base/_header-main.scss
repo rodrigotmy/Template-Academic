@@ -1,0 +1,50 @@
+.header-main {
+  @include max-width-page;
+  height: 80px;
+  background-color: #FFF;
+
+  &__contnr-into {
+    @include max-width-contnr;
+    @include contnr-center;
+    background-color: #FFF;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid greenyellow;
+  }
+
+  &__img-logo {
+    width: 160px;
+    height: 50px;
+    background-color: green;
+    border-radius: 4px;
+  }
+
+  &__navbar {
+    display: flex;
+  }
+
+  &__menu {
+    // border: 1px solid grey;
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__items {
+    font-family: $Font1;
+    color: $color-txt;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+  }
+
+  &__button-apply {
+
+  }
+}

@@ -1,0 +1,58 @@
+.navbar-info {
+  @include max-width-page;
+  height: 35px;
+  background-color: $color-primary;
+
+  &__contnr-into {
+    background-color: inherit;
+    width: 80%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    @include contnr-center;
+  }
+
+  &__info-contact-basic {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-contact {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin-right: 6px;
+  }
+
+  &__txt-info-contact {
+    font-family: $Font1;
+    font-size: .7em;
+    color: #FFF;
+    margin-right: 12px;
+  }
+
+
+  &__info-contact-sm {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  &__contnr-icon {
+    width: 53px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: $color-hover;
+      cursor: pointer;
+    }
+  }
+
+  &__icon-sm {
+    @extend .navbar-info__icon-contact;
+    margin: initial;
+  }
+}

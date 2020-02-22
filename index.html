@@ -37,16 +37,15 @@
       <div class="header-main__img-logo"></div>
       <div class="header-main__navbar">
         <ul class="header-main__menu">
-          <li class="header-main__items">Home</li>
+          <li class="header-main__items-active">Home</li>
           <li class="header-main__items">Courses</li>
           <li class="header-main__items">Pages</li>
           <li class="header-main__items">Events</li>
           <li class="header-main__items">About Us</li>
           <li class="header-main__items">Contact</li>
         </ul>
-        <a href="#" class="header-main__button-apply button">Apply Online</a>
+        <a href="#" class="button-base">Apply Online</a>
       </div>
-
     </div>
   </div>
 
@@ -85,21 +84,22 @@
   <div class="form-register">
     <div class="form-register__contnr-into">
       <form class="form-register__form">
-        <input class="form-register__component" type="text" placeholder="Firs Name (Required)">
-        <input class="form-register__component" type="text" placeholder="Last Name (Required)">
-        <input class="form-register__component" type="text" placeholder="Phone Number (Required)">
-        <input class="form-register__component" type="date" placeholder="Date of Birt (Required)">
-        <input class="form-register__component" type="text" placeholder="Passport No. (Required)">
-        <input class="form-register__component" type="text" placeholder="Nationality (Required)">
-
-        <select class="form-register__component" name="libro" id="listado">
+        <input class="input-base" type="text" placeholder="Firs Name (Required)">
+        <input class="input-base" type="text" placeholder="Last Name (Required)">
+        <input class="input-base" type="text" placeholder="Phone Number (Required)">
+        
+        <input class="input-date" type="date" placeholder="Date of Birt (Required)">
+        <input class="input-base" type="text" placeholder="Passport No. (Required)">
+        <input class="input-base" type="text" placeholder="Nationality (Required)">
+        
+        <select class="input-base" name="libro" id="listado">
           <option value="1">Select Courses You Are Interested In</option>
           <option value="2">Option 1</option>
           <option value="2">Option 2</option>
           <option value="2">Option 3</option>
         </select>
-
-        <div class="form-register__component">
+        
+        <div class="input-radio">
           <p>Gender</p>
           <label>
             <input type="radio" name="edad" value="0"> Female
@@ -109,8 +109,8 @@
           </label> 
         </div>
 
-        <div class="form-register__component">
-          <p>Gender</p>
+        <div class="input-radio">
+          <p>Level</p>
           <label>
             <input type="radio" name="edad" value="0"> Undergraduate
           </label> 
@@ -122,16 +122,115 @@
           </label> 
         </div>
 
-        <input class="form-register__component" type="date" placeholder="Select Courses Date (Required)">
-        <input class="form-register__component" type="date" placeholder="Start Date (Required)">
-        <input class="form-register__component" type="date" placeholder="Ending Date (Required)">
+        <!-- <input class="input-date" type="date" placeholder="Date of Birt (Required)">
+        <input class="input-date" type="date" placeholder="Date of Birt (Required)"> -->
 
-        <button class="form-register__component" type="submit">Submit Now</button>
+        <input class="input-date" type="date" placeholder="Select Course Date (Required)">
+        <input class="input-date" type="date" placeholder="Start Date (Required)">
+        <input class="input-date" type="date" placeholder="Ending Date (Required)">
+
+        <button type="submit" class="button-base">Submit Now</button>
 
       </form>
     </div>
   </div>
 
+  <div class="footer">
+    <div class="footer__contnr-into">
+      <div class="footer__header">
+        <div class="footer__logo"></div>
+        <form class="footer__form-search">
+          <input type="text" class="input-base-aux" placeholder="Find a course">
+          <button type="submit" class="button-base-icon">X</button>
+          <input type="text" class="input-base-aux" placeholder="All course">
+          <button type="submit" class="button-base-icon">X</button>
+        </form>
+      </div>
+
+      <div class="footer__section-info">
+        <div class="footer__item-info">
+          <p class="footer__txt-info-title">About Us</p>
+          <ul class="footer__menu-second">
+            <li class="footer__menu-item">
+              <details>
+                <summary class="footer__txt-title-menu">Our Courses</summary>
+                <p>Bootstrap</p>
+                <p>Ionic 4</p>
+                <p>React js</p>
+                <p>Java Script</p>
+               </details> 
+            </li>
+            <li class="footer__menu-item">Professors</li>
+            <li class="footer__menu-item">Events</li>
+            <li class="footer__menu-item">Our Prices</li>
+            <li class="footer__menu-item">About Us</li>
+          </ul>
+        </div>
+
+        <div class="footer__item-info">
+          <p class="footer__txt-info-title">Latest Courses</p>
+          <div class="footer__contnr-item-lc">
+            <div class="footer__img-lc"></div>
+            <div class="footer__content-lc">
+              <p class="footer__txt-location-lc">BA (Honours) Social Work</p>
+              <p class="footer__txt-date-lc">Starts in 10 Sept, 2016</p>
+              <p class="footer__txt-price-lc">$109.99</p>
+            </div>
+          </div>
+          <div class="footer__contnr-item-lc">
+            <div class="footer__img-lc"></div>
+            <div class="footer__content-lc">
+              <p class="footer__txt-location-lc">BSc (Honours) Computing IT</p>
+              <p class="footer__txt-date-lc">Starts in 11 Sept, 2016</p>
+              <p class="footer__txt-price-lc">$134.99</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer__item-info">
+          <p class="footer__txt-info-title">Campus Gallery</p>
+          <div class="footer__contnr-item-cg">
+            <div class="footer__item-gallery-cg"></div>
+            <div class="footer__item-gallery-cg"></div>
+            <div class="footer__item-gallery-cg"></div>
+            <div class="footer__item-gallery-cg"></div>
+            <div class="footer__item-gallery-cg"></div>
+            <div class="footer__item-gallery-cg"></div>
+          </div>
+        </div>
+
+        <div class="footer__item-info">
+          <p class="footer__txt-info-title">Contact Details</p>
+          <div class="footer__contnr-item-cd">
+            <div class="footer__contnr-info-cd">
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <p class="navbar-info__txt-info-contact txt-cd">San Francisco Camp. Campeche, México <br> </p>
+            </div>
+            
+
+            <div class="footer__contnr-info-cd">
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <p class="navbar-info__txt-info-contact txt-cd">981 435 54 63</p>
+            </div>
+
+            <div class="footer__contnr-info-cd">
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <p class="navbar-info__txt-info-contact txt-cd">rodrigotmy@gmail.com</p>
+            </div>
+            
+            <div class="footer__contnr-info-cd">
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <div class="navbar-info__icon-contact icon-cd"></div>
+              <div class="navbar-info__icon-contact icon-cd"></div>
+            </div>
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 

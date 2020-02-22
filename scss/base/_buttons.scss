@@ -1,20 +1,25 @@
-.button {
+.button-base {
   width: 160px;
-  height: 44px;
+  height: 45px;
+  border: none;
   border-radius: 2px;
   background-color: #ec5964;
 
   @include content-center-fb;
   font-family: $Font1;
-  font-size: .8em;
+  font-size: 1em;
   color: #FFF;
-
-
-  // font-size: 20px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.35;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   text-decoration: none;
+
+  cursor: pointer;
+
+  &-icon {
+    @extend .button-base;
+    height: 40px;
+    width: 50px;
+    border-radius: initial;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
 }

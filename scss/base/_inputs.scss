@@ -1,10 +1,33 @@
-.input {
+.input-base {
+  // max-width: 325px;
   width: auto;
-  height: 40px;
+  height: 45px;
   border: none;
   border-radius: 2px;
-  background-color: honeydew;
-  font-size: .8em;
-  margin: 3px;
-  padding-left: 16px;
+  background-color: lightgray;
+  color: $color-txt;
+  font-size: 1em;
+  padding-left: 20px;
+
+  &-aux {
+    @extend .input-base;
+    width: 200px;
+    height: 40px;
+    border-radius: initial;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+}
+
+.input-date {
+  @extend .input-base;
+  display: flex;
+  font-size: 1.2em;
+}
+
+.input-radio {
+  @extend .input-base;
+  background-color: initial;
+  display: flex;
+  // font-size: 1.2em;
 }

@@ -41,9 +41,13 @@
     padding-left: 8px;
     padding-right: 8px;
     cursor: pointer;
+
+    &-active {
+      @extend .header-main__items;
+      font-weight: 600;
+      color: $color-second;
+    }
+
   }
 
-  &__button-apply {
-
-  }
 }

@@ -9,4 +9,25 @@
     height: inherit;
     background-color: green;
   }
+
+  &__form {
+    border: 1px solid red;
+  }
+
+}
+
+
+
+.input-radio {
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+}
+
+  .input-radio p {
+  margin-right: 20px;
+}
+
+.input-radio label:nth-of-type(1) {
+  margin-right: 20px;
 }

@@ -1,4 +1,5 @@
 @import "lib/variables";
+@import "lib/functions";
 @import "lib/mixins";
 
 
@@ -10,5 +11,6 @@
 @import "base/hero";
 @import "base/services";
 @import "base/form-register";
+@import "base/footer";
 
 @import "grid/form-register";

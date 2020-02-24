@@ -1,6 +1,6 @@
 .input-base {
   // max-width: 325px;
-  width: auto;
+  width: 100%;
   height: 45px;
   border: none;
   border-radius: 2px;
@@ -22,12 +22,11 @@
 .input-date {
   @extend .input-base;
   display: flex;
-  font-size: 1.2em;
 }
 
 .input-radio {
   @extend .input-base;
   background-color: initial;
   display: flex;
-  // font-size: 1.2em;
+  align-items: center;
 }

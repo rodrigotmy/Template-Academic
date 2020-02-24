@@ -1,21 +1,18 @@
-
 .footer {
   @include max-width-page;
   height: auto;
   background-color: $color-primary;
   font-family: $Font1;
 
-
   &__contnr-into {
     @include max-width-contnr;
     @include contnr-center;
     height: inherit;
     background-color: $color-primary;
-    // border: 1px solid #FFF;
     background-color: $color-primary;
-    // margin-top: 40px;
   }
 
+  // form btts
   &__header {
     margin-bottom: 60px;
     padding-top: 50px;
@@ -39,19 +36,29 @@
     align-items: center;
     justify-content: center;
     
-    & button:nth-of-type(1) {
-      margin-right: 40px;
+    input {
+      width: 270px;
+      height: 45px;
+    }
+
+    button {
+      height: 45px;
+      width: 55px;
+    }
+
+    button:nth-of-type(1) {
+      margin-right: 20px;
     }
 
   }
 
-
   &__section-info {
-    // margin-top: 60px;
-
     display: flex;
-    // border: 1px solid red;
     justify-content: space-between;
+  }
+
+  input {
+    background-color: #FFF;
   }
 
 
@@ -61,7 +68,7 @@
   }
 
   &__txt-info-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #FFF;
     margin-bottom: 32px;
   }
@@ -72,7 +79,7 @@
   // item 1
   &__menu-second {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   &__menu-item {
@@ -104,7 +111,7 @@
   }
 
   &__txt-location-lc {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #FFF;
     margin-bottom: 6px;
   }

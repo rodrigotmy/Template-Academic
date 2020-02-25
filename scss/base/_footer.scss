@@ -10,6 +10,8 @@
     height: inherit;
     background-color: $color-primary;
     background-color: $color-primary;
+    padding-bottom: 20px;
+
   }
 
   // form btts
@@ -50,6 +52,16 @@
       margin-right: 20px;
     }
 
+    .button-base-icon:nth-of-type(1) {
+      background-image: url("../images/icons/icon-search-300px.svg");
+      @include button-icon;
+    }
+    .button-base-icon:nth-of-type(2) {
+      background-image: url("../images/icons/icon-arrow-300px.svg");
+      @include button-icon;
+    }
+
+
   }
 
   &__section-info {
@@ -68,12 +80,11 @@
   }
 
   &__txt-info-title {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #FFF;
     margin-bottom: 32px;
   }
   ///
-
 
 
   // item 1
@@ -103,28 +114,28 @@
   }
 
   &__img-lc {
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     border-radius: 2px;
     background-color: #FFF;
     margin-right: 24px;
   }
 
   &__txt-location-lc {
-    font-size: 1em;
+    font-size: .95em;
     color: #FFF;
     margin-bottom: 6px;
   }
 
   &__txt-date-lc {
-    font-size: 1em;
+    font-size: .85em;
     margin-bottom: 16px;
     color: lightgray;
   }
 
   &__txt-price-lc {
     color: $color-second;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
 
@@ -163,6 +174,16 @@
     margin-top: 10px;
     width: 80%;
   }
+
+
+  &__copyright {
+    padding: 10px 0;
+    @include contnr-center;
+    @include content-center-fb;
+    font-family: $Font1;
+    color: #FFF;
+    font-size: .95em;
+  }
 }
 
 .icon-cd {
@@ -171,11 +192,10 @@
 
 .txt-cd {
   margin: initial;
-  // display: inline-block;
 }
 
 
 details p {
-  margin-bottom: 6px;
   margin-left: 16px;
+  margin-bottom: 6px;
 }

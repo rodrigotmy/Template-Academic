@@ -33,7 +33,6 @@
 
   &__items {
     font-family: $Font1;
-    color: $color-txt;
     display: flex;
     align-items: center;
     margin-left: 5px;
@@ -42,12 +41,18 @@
     padding-right: 8px;
     cursor: pointer;
 
+    
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-txt;
     &-active {
-      @extend .header-main__items;
+      @extend .header-main__link;
       font-weight: 600;
       color: $color-second;
     }
-
   }
 
 }

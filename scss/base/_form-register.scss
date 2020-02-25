@@ -24,7 +24,7 @@
   .input-date {
     font-family: $Font1;
   }
-
+  
   .input-radio {
     border: 1px solid lightgray;
     font-family: $Font1;
@@ -49,3 +49,7 @@
 
 
 
+
+select {
+  border: 2px solid green;
+}

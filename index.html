@@ -10,12 +10,14 @@
   <div class="navbar-info">
     <div class="navbar-info__contnr-into">
       <div class="navbar-info__info-contact-basic">
-        <div class="navbar-info__icon-contact"></div>
+        <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
         <div class="navbar-info__txt-info-contact">San Francisco de Campeche, Campeche, México</div>
-        <div class="navbar-info__icon-contact"></div>
+        
+        <img src="images/icons/icon-phone-300px.svg" alt="" class="navbar-info__icon-contact">
         <div class="navbar-info__txt-info-contact">981 435 54 63</div>
-        <div class="navbar-info__icon-contact"></div>
-        <div class="navbar-info__txt-info-contact">rodrigotmy@gmail.com</div>
+        
+        <img src="images/icons/icon-email-300px.svg" alt="" class="navbar-info__icon-contact">
+        <div class="navbar-info__txt-info-contact">contact@academic.com</div>
       </div>
 
       <div class="navbar-info__info-contact-sm">
@@ -37,12 +39,12 @@
       <div class="header-main__img-logo"></div>
       <div class="header-main__navbar">
         <ul class="header-main__menu">
-          <li class="header-main__items-active">Home</li>
-          <li class="header-main__items">Courses</li>
-          <li class="header-main__items">Pages</li>
-          <li class="header-main__items">Events</li>
-          <li class="header-main__items">About Us</li>
-          <li class="header-main__items">Contact</li>
+          <li class="header-main__items"><a href="#" class="header-main__link-active">Home</a></li>
+          <li class="header-main__items"><a href="#" class="header-main__link">Courses</a></li>
+          <li class="header-main__items"><a href="#" class="header-main__link">Pages</a></li>
+          <li class="header-main__items"><a href="#" class="header-main__link">Events</a></li>
+          <li class="header-main__items"><a href="#" class="header-main__link">About Us</a></li>
+          <li class="header-main__items"><a href="#" class="header-main__link">Contact</a></li>
         </ul>
         <a href="#" class="button-base">Apply Online</a>
       </div>
@@ -51,19 +53,32 @@
 
   <div class="hero">
     <img class="hero__image" src="images/image-hero.jpg" alt="image-hero.jpg">
+    <div class="hero__contnr-delay">
+      <div class="hero__contnr-txt">
+        <h1 class="hero__title-txt">APPLY ONLINE</h1>
+        <div class="hero__box-nav">
+          <strong class="hero__folder-txt">Home</strong>
+          <strong class="hero__arrow"> > </strong>
+          <span class="hero__active-txt">Online Application</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="services">
     <div class="services__contnr-into">
       <div class="services__item">
-        <div class="services__item-icon"></div>
+        <div class="services__contnr-icon">
+        </div>
         <span class="services__item-detail">
           <p class="services__item-title">Maps & Location</p>
           <p class="services__item-descrp">Come and visit whenever you want</p>
         </span>
       </div>
       <div class="services__item">
-        <div class="services__item-icon"></div>
+        <div class="services__contnr-icon">
+          <img src="images/icons/icon-date-300px.svg" alt="Hola" class="services__item-icon">
+        </div>
         <span class="services__item-detail">
           <p class="services__item-title">Our Events</p>
           <p class="services__item-descrp">See what's on at our great
@@ -71,7 +86,7 @@
         </span>
       </div>
       <div class="services__item">
-        <div class="services__item-icon"></div>
+        <div class="services__contnr-icon"></div>
         <span class="services__item-detail">
           <p class="services__item-title">Heritage</p>
           <p class="services__item-descrp">Lear more about our university
@@ -111,7 +126,7 @@
         <div class="form-register__form-item">
           <select class="input-base" name="libro" id="listado">
             <option value="1">Select Courses You Are Interested In</option>
-            <option value="2">Option 1</option>
+            <option class="hole" value="2">Option 1</option>
             <option value="2">Option 2</option>
             <option value="2">Option 3</option>
           </select>
@@ -166,9 +181,9 @@
         <div class="footer__logo"></div>
         <form class="footer__form-search">
           <input type="text" class="input-base-aux" placeholder="Find a course">
-          <button type="submit" class="button-base-icon">X</button>
+          <button type="submit" class="button-base-icon"></button>
           <input type="text" class="input-base-aux" placeholder="All course">
-          <button type="submit" class="button-base-icon">X</button>
+          <button type="submit" class="button-base-icon"></button>
         </form>
       </div>
 
@@ -177,18 +192,50 @@
           <p class="footer__txt-info-title">About Us</p>
           <ul class="footer__menu-second">
             <li class="footer__menu-item">
-              <details>
+              <details class="footer__menu-item">
                 <summary class="footer__txt-title-menu">Our Courses</summary>
                 <p>Bootstrap</p>
                 <p>Ionic 4</p>
                 <p>React js</p>
                 <p>Java Script</p>
-               </details> 
+              </details>
             </li>
-            <li class="footer__menu-item">Professors</li>
-            <li class="footer__menu-item">Events</li>
-            <li class="footer__menu-item">Our Prices</li>
-            <li class="footer__menu-item">About Us</li>
+            <li class="footer__menu-item">
+              <details class="footer__menu-item">
+                <summary class="footer__txt-title-menu">Professors</summary>
+                <p>Bootstrap</p>
+                <p>Ionic 4</p>
+                <p>React js</p>
+                <p>Java Script</p>
+              </details>
+            </li>
+            <li class="footer__menu-item">
+              <details class="footer__menu-item">
+                <summary class="footer__txt-title-menu">Events</summary>
+                <p>Bootstrap</p>
+                <p>Ionic 4</p>
+                <p>React js</p>
+                <p>Java Script</p>
+              </details>
+            </li>
+            <li class="footer__menu-item">
+              <details class="footer__menu-item">
+                <summary class="footer__txt-title-menu">Our Prices</summary>
+                <p>Bootstrap</p>
+                <p>Ionic 4</p>
+                <p>React js</p>
+                <p>Java Script</p>
+              </details>
+            </li>
+            <li class="footer__menu-item">
+              <details class="footer__menu-item">
+                <summary class="footer__txt-title-menu">About Us</summary>
+                <p>Bootstrap</p>
+                <p>Ionic 4</p>
+                <p>React js</p>
+                <p>Java Script</p>
+              </details>
+            </li>
           </ul>
         </div>
 
@@ -228,40 +275,37 @@
           <p class="footer__txt-info-title">Contact Details</p>
           <div class="footer__contnr-item-cd">
             <div class="footer__contnr-info-cd">
-              <div class="navbar-info__icon-contact icon-cd"></div>
+              <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
               <p class="navbar-info__txt-info-contact txt-cd">San Francisco Camp. Campeche, México <br> </p>
             </div>
-            
 
             <div class="footer__contnr-info-cd">
-              <div class="navbar-info__icon-contact icon-cd"></div>
+              <img src="images/icons/icon-phone-300px.svg" alt="" class="navbar-info__icon-contact">
               <p class="navbar-info__txt-info-contact txt-cd">981 435 54 63</p>
             </div>
 
             <div class="footer__contnr-info-cd">
-              <div class="navbar-info__icon-contact icon-cd"></div>
-              <p class="navbar-info__txt-info-contact txt-cd">rodrigotmy@gmail.com</p>
+              <img src="images/icons/icon-email-300px.svg" alt="" class="navbar-info__icon-contact">
+              <p class="navbar-info__txt-info-contact txt-cd">contact@academic.com</p>
             </div>
             
             <div class="footer__contnr-info-cd">
-              <div class="navbar-info__icon-contact icon-cd"></div>
-              <div class="navbar-info__icon-contact icon-cd"></div>
-              <div class="navbar-info__icon-contact icon-cd"></div>
-              <div class="navbar-info__icon-contact icon-cd"></div>
+              <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
+              <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
+              <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
+              <img src="images/icons/icon-location-300px.svg" alt="" class="navbar-info__icon-contact">
             </div>
           
           </div>
         </div>
 
       </div>
+
+      <div class="footer__copyright">
+        2020 Copyright Academic Inc
+      </div>
+
     </div>
   </div>
 </body>
 </html>
-
-
-<!-- 
-  8 = 8
-  8 8 = 16
-  8 8 8 = 24 
--->

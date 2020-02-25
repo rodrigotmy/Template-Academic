@@ -16,15 +16,22 @@
     // border: 1px solid grey;
     width: 300px;
     height: 100px;
-
   }
 
-  &__item-icon {
+  &__contnr-icon {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background-color: $color-aux;
     float: left;
+    @include content-center-fb;
+  }
+
+  &__item-icon {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
   }
 
 

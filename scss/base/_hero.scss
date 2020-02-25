@@ -2,6 +2,7 @@
   background-color: orange;
   @include max-width-page ;
   height: 300px;
+  position: relative;
 
   &__image {
     width: 100%;
@@ -9,4 +10,59 @@
     object-fit: cover;
     object-position: center;
   }
+
+  &__contnr-delay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: inherit;
+    background-color: rgba($color-primary, 0.3);
+    @include max-width-page;
+  }
+
+  &__contnr-txt {
+    @include max-width-contnr;
+    @include contnr-center;
+    height: inherit;
+    // border: 1px solid green;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: $Font1;
+    
+  }
+
+  &__title-txt {
+    color: #FFF;
+    margin-bottom: 24px;
+    font-size: 2.5em;
+  }
+
+  &__box-nav {
+    height: auto;
+    width: auto;
+    background-color: #FFF;
+    display: block;
+    padding: 20px 28px;
+    font-size: .9em;
+    color: $color-txt;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+  }
+
+  &__folder-txt {
+    color: $color-primary;
+  }
+  &__arrow {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  &__active-txt {
+    color: $color-second;
+    font-weight: normal;
+  }
+
 }

@@ -4,12 +4,12 @@
   background-color: $color-primary;
 
   &__contnr-into {
+    @include max-width-contnr;
+    @include contnr-center;
     background-color: inherit;
-    width: 80%;
     height: inherit;
     display: flex;
     justify-content: space-between;
-    @include contnr-center;
   }
 
   &__info-contact-basic {
@@ -26,23 +26,19 @@
   &__txt-info-contact {
     font-family: $Font1;
     font-size: .74em;
-    color: #FFF;
+    color: $color-white;
     margin-right: 12px;
   }
 
-
   &__info-contact-sm {
-    height: inherit;
     display: flex;
     align-items: center;
   }
 
   &__contnr-icon {
-    width: 53px;
     height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 45px;
+    @include content-center-fb;
     &:hover {
       background-color: $color-hover;
       cursor: pointer;

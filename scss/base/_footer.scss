@@ -11,32 +11,22 @@
     background-color: $color-primary;
     background-color: $color-primary;
     padding-bottom: 20px;
-
   }
 
-  // form btts
   &__header {
     margin-bottom: 60px;
     padding-top: 50px;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include contnt-sbtw-center;
   }
 
   &__logo {
-    width: 150px;
-    height: 60px;
-    border: none;
-    border-radius: 2px;
-    background-color: #FFF;
+    width: 175px;
   }
 
   &__form-search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include content-center-fb;
     
     input {
       width: 270px;
@@ -60,8 +50,6 @@
       background-image: url("../images/icons/icon-arrow-300px.svg");
       @include button-icon;
     }
-
-
   }
 
   &__section-info {
@@ -75,13 +63,10 @@
 
 
   // similar 
-  &__item-info {
-    // border: 1px solid green;
-  }
 
   &__txt-info-title {
     font-size: 1.2em;
-    color: #FFF;
+    color: $color-white;
     margin-bottom: 32px;
   }
   ///
@@ -103,7 +88,6 @@
   }
 
 
-
   // item 2
   &__contnr-item-lc {
     display: flex;
@@ -117,13 +101,13 @@
     width: 80px;
     height: 80px;
     border-radius: 2px;
-    background-color: #FFF;
+    background-color: $color-white;
     margin-right: 24px;
   }
 
   &__txt-location-lc {
     font-size: .95em;
-    color: #FFF;
+    color: $color-white;
     margin-bottom: 6px;
   }
 
@@ -139,7 +123,6 @@
   }
 
 
-
   // Item 3
   &__contnr-item-cg {
     display: grid;
@@ -149,13 +132,12 @@
   }
 
   &__item-gallery-cg {
-    background-color: #FFF;
+    background-color: $color-white;
     border-radius: 4px;
   }
 
 
   // Item 4
-
   &__contnr-item-cd {
     display: flex;
     flex-direction: column;
@@ -164,24 +146,31 @@
   &__contnr-info-cd {
     display: flex;
     margin-bottom: 20px;
+  }
 
+  &__link-contact-sm {
+    display: flex;
+  }
+
+  &__icon-contact-sm {
+    width: 18px;
+    height: 18px;
+    margin-right: initial;
   }
   
   &__contnr-info-cd:last-child {
-    // border: 1px solid green;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    width: 80%;
+    width: 40%;
+    margin-bottom: initial;
   }
-
 
   &__copyright {
     padding: 10px 0;
     @include contnr-center;
     @include content-center-fb;
     font-family: $Font1;
-    color: #FFF;
+    color: $color-white;
     font-size: .95em;
   }
 }
@@ -193,7 +182,6 @@
 .txt-cd {
   margin: initial;
 }
-
 
 details p {
   margin-left: 16px;

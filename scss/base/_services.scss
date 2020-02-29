@@ -1,19 +1,17 @@
 .services {
   @include max-width-page;
-  background-color: #FFF;
+  background-color: $color-white;
   height: 250px;
 
   &__contnr-into {
     @include max-width-contnr;
     @include contnr-center;
-    @include content-center-fb;
-    justify-content: space-between;
+    @include contnt-sbtw-center;
     height: inherit;
-    background-color: #FFF;
+    background-color: $color-white;
   }
 
   &__item {
-    // border: 1px solid grey;
     width: 300px;
     height: 100px;
   }
@@ -41,15 +39,12 @@
     height: auto;
     font-family: $Font1;
     margin-top: 16px;
-    
-    // border: 1px solid green;
   }
 
   &__item-title {
     font-size: 1.2em;
     color: $color-second;
     margin-bottom: 10px;
-    
   }
 
   &__item-descrp {
@@ -57,7 +52,5 @@
     color: $color-txt;
     float: right;
   }
-
-  
 
 }

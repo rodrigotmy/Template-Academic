@@ -32,7 +32,6 @@
     object-position: center;
   }
 
-
   &__item-detail {
     float: right;
     width: 60%;
@@ -42,13 +41,14 @@
   }
 
   &__item-title {
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 500;
     color: $color-second;
     margin-bottom: 10px;
   }
 
   &__item-descrp {
-    font-size: 1em;
+    font-size: .95em;
     color: $color-txt;
     float: right;
   }

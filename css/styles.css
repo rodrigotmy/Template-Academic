@@ -13,8 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "SegoeUI", sans-serif;
-  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: .9em;
   color: #FFF;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -87,7 +87,7 @@
 }
 
 .navbar-info__txt-info-contact {
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: .74em;
   color: #FFF;
   margin-right: 12px;
@@ -148,7 +148,8 @@
 }
 
 .header-main__items {
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: .95em;
   display: flex;
   align-items: center;
   margin-left: 5px;
@@ -201,7 +202,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero__title-txt {
@@ -281,18 +282,19 @@
   float: right;
   width: 60%;
   height: auto;
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 16px;
 }
 
 .services__item-title {
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 500;
   color: #ec5964;
   margin-bottom: 10px;
 }
 
 .services__item-descrp {
-  font-size: 1em;
+  font-size: .95em;
   color: #43444a;
   float: right;
 }
@@ -317,19 +319,19 @@
 }
 
 .form-register__form-title {
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .form-register .input-date {
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-register .input-radio {
   border: 1px solid lightgray;
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-register .input-radio p {
@@ -353,7 +355,7 @@ select {
   width: 100%;
   height: auto;
   background-color: #082b3f;
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer__contnr-into {
@@ -523,7 +525,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "SegoeUI", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #FFF;
   font-size: .95em;
 }

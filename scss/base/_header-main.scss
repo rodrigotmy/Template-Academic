@@ -27,6 +27,7 @@
 
   &__items {
     font-family: $Font1;
+    font-size: .95em;
     display: flex;
     align-items: center;
     margin-left: 5px;
@@ -45,5 +46,4 @@
       color: $color-second;
     }
   }
-
 }

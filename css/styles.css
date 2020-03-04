@@ -257,7 +257,7 @@
 
 .services__item {
   width: 300px;
-  height: 100px;
+  height: auto;
 }
 
 .services__contnr-icon {
@@ -266,9 +266,6 @@
   border-radius: 50%;
   background-color: #5e9d6f;
   float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .services__item-icon {
@@ -628,4 +625,59 @@ details p {
 .form-register__form-item:nth-of-type(13) {
   grid-column: 1 / span 3;
   grid-row: 6 / span 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-info__contnr-into {
+    display: none;
+  }
+  .header-main {
+    border: 1px solid green;
+  }
+  .header-main__navbar {
+    display: none;
+  }
+  .services {
+    height: auto;
+  }
+  .services__contnr-into {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .services__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .services__item-icon, .services__item-detail {
+    text-align: center;
+  }
+  .footer__header {
+    flex-direction: column;
+  }
+  .footer__form-search {
+    flex-direction: column;
+  }
+  .footer__section-info {
+    flex-direction: column;
+  }
+  .form-register__form {
+    max-width: 600px;
+  }
+  .form-register .input-radio {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-register__form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(50px, 175px));
+    grid-template-rows: repeat(6, 1fr);
+  }
 }

@@ -6,10 +6,29 @@
   }
 
   .header-main {
-    border: 1px solid green;
+    // border: 1px solid green;
     &__navbar {
       display: none;
     }
+    &__img-logo {
+      margin-left: 20px;
+    }
+  }
+
+  .hero {
+    &__contnr-txt {
+      flex-direction: column;
+    }
+    &__title-txt {
+      margin: initial;
+      @include contnr-center;
+      margin-top: 30px;
+    }
+  }
+
+  &__form-item {
+    grid-column: initial;
+    grid-row: initial;
   }
 
   .services {
@@ -25,7 +44,6 @@
       padding-bottom: 50px;
     }
     &__item {
-      // border: 1px solid orange;
       display: flex;
       flex-direction: column;
       height: auto;
@@ -36,6 +54,11 @@
       text-align: center;
     }
   }
+
+  .form-register__form {
+    display: none;
+  }
+
   .footer {
     &__header {
       flex-direction: column;
@@ -44,24 +67,53 @@
     &__form-search {
       flex-direction: column;
     }
-    &__section-info {
-      flex-direction: column;
+    &__logo {
+      margin-bottom: 30px;
     }
-  }
-  .form-register {
-    &__form {
-      max-width: 600px;
+
+    &__form-search {
+      // border: 1px solid grey;
+      width: auto;
+      display: initial;
+
+      .button-base-icon.bttn-find {
+        margin-right: initial;
+      }
+
+      .inp-bttn {
+        // border: 1px solid red;
+        display: flex;
+      }
+      .inp-bttn:nth-of-type(1) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__contnr-into {
       // border: 1px solid green;
+      width: 75%;
     }
-    .input-radio {
-      display: flex;
-      flex-direction: column  ;
+
+    &__section-info {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 50px 0;
+    }
+    &__txt-info-title {
+      text-align: center;
+    }
+    &__item-info {
+      width: 80%;
+      @include contnr-center;
+    }
+    &__contnr-info-cd:nth-of-type(4) {
+      @include contnr-center;
+      margin-top: 10px;
+    }
+    &__copyright {
+      margin-top: 50px;
     }
   }
-  .form-register__form {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, minmax(50px, 175px)); 
-    grid-template-rows: repeat(6, 1fr);
-  }
+
 }

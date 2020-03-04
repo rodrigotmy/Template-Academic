@@ -9,7 +9,6 @@
     @include contnr-center;
     height: inherit;
     background-color: $color-primary;
-    background-color: $color-primary;
     padding-bottom: 20px;
   }
 
@@ -38,15 +37,12 @@
       width: 55px;
     }
 
-    button:nth-of-type(1) {
-      margin-right: 20px;
-    }
-
-    .button-base-icon:nth-of-type(1) {
+    .button-base-icon.bttn-find {
       background-image: url("../images/icons/icon-search-300px.svg");
       @include button-icon;
+      margin-right: 20px;
     }
-    .button-base-icon:nth-of-type(2) {
+    .button-base-icon.bttn-all {
       background-image: url("../images/icons/icon-arrow-300px.svg");
       @include button-icon;
     }
@@ -127,8 +123,9 @@
   &__contnr-item-cg {
     display: grid;
     grid-template-columns: repeat(3, 80px);
-    grid-template-rows: repeat(3, 80px);
+    grid-template-rows: repeat(2, 80px);
     grid-gap: 10px;
+    justify-content: center;
   }
 
   &__item-gallery-cg {

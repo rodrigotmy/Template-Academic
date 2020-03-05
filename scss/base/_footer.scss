@@ -27,6 +27,12 @@
   &__form-search {
     @include content-center-fb;
     
+    .inp-bttn {
+      margin-right: 30px;
+      display: flex;
+      // border: 1px solid green ;
+    }
+
     input {
       width: 270px;
       height: 45px;
@@ -40,7 +46,6 @@
     .button-base-icon.bttn-find {
       background-image: url("../images/icons/icon-search-300px.svg");
       @include button-icon;
-      margin-right: 20px;
     }
     .button-base-icon.bttn-all {
       background-image: url("../images/icons/icon-arrow-300px.svg");
@@ -169,6 +174,7 @@
     font-family: $Font2;
     color: $color-white;
     font-size: .95em;
+    margin-top: 20px;
   }
 }
 

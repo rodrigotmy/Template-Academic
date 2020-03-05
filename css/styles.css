@@ -385,6 +385,11 @@ select {
   align-items: center;
 }
 
+.footer__form-search .inp-bttn {
+  margin-right: 30px;
+  display: flex;
+}
+
 .footer__form-search input {
   width: 270px;
   height: 45px;
@@ -400,7 +405,6 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
-  margin-right: 20px;
 }
 
 .footer__form-search .button-base-icon.bttn-all {
@@ -522,6 +526,7 @@ select {
   font-family: "Lato", sans-serif;
   color: #FFF;
   font-size: .95em;
+  margin-top: 20px;
 }
 
 .icon-cd {

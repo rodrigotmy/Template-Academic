@@ -52,11 +52,10 @@
   &__folder-txt {
     color: $color-primary;
   }
-  &__arrow {
-    font-weight: normal;
-    font-size: 16px;
+  &__arrow-right-icon {
+    height: 10px;
   }
-
+  
   &__active-txt {
     color: $color-second;
     font-weight: normal;
